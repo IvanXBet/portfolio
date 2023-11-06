@@ -1,0 +1,98 @@
+.use {
+    position: relative;
+    padding: 125px 10px 0;
+    &__title {
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: 117px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 0 10px;
+    }
+    &__block {
+        margin-top: 60px;
+        display: grid;
+        grid-template: 270px 270px  / 270px 270px 270px 270px;
+        grid-gap: 13px;
+    }
+    &__item {
+        width: 270px;
+        height: 270px;
+        padding: 30px;
+        border: 1px solid #000;
+        &-icon {
+            display: flex;
+            align-items: center;
+            min-height: 65px;
+            img {
+            }
+        }
+        &-title{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 20px;
+            
+        }
+        &-text {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 15px;
+        }
+    }
+    &__scills {
+        margin-top: 130px;
+        display: grid;
+        grid-template: 60px 60px / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 35px;
+        position: relative;
+        &-title {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-left: 13px;
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
+        }
+        &-counter {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &-wrapper {
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-line {
+            margin-top: 20px;
+            height: 14px;
+            width: 100%;
+            background: #E8E4DE;
+            border-radius: 4px;
+            span {
+                display: block;
+                height: 14px;
+                background-color: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+
+}
