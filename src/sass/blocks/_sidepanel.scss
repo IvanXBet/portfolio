@@ -1,6 +1,6 @@
 .sidepanel {
     position: fixed;
-    height: 340px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8,6 +8,7 @@
     z-index: 3;
 
     top: 230px;
+    left: 75px;
     a {
        img{
             height: 20px;
@@ -23,10 +24,13 @@
         background: #000;
     }
     &__text{
-        transform: rotate(-90deg);
         font-weight: 700;
         font-size: 16px;
-        width: 250px;
-        height: 25px;
+        writing-mode: vertical-lr; 
+        transform: rotate(-180deg);
+
+        //    
+        // width: 250px;
+        // height: 25px;
     }
 }

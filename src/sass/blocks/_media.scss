@@ -1,3 +1,17 @@
+@media (max-width: 1368px) {
+    .container {
+        width: 1065px;
+    }
+    .sidepanel {
+        top: 230px;
+        left: 55px;
+    }
+    .contacts{
+        .container {
+            width: 1150px;
+        }
+    }
+}
 @media (max-width: 1200px) {
     .container {
         min-width: 950px;
