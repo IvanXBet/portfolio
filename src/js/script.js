@@ -8,6 +8,14 @@ humburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
     menu.classList.remove('activ');
 })
+
+const menuItems = menu.querySelectorAll('.menu__link');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', ()=> {
+        menu.classList.remove('activ');
+    })
+})
  
 
 const counters = document.querySelectorAll('.use__scills-counter'),
@@ -15,5 +23,9 @@ const counters = document.querySelectorAll('.use__scills-counter'),
       counters.forEach((item, i) => {
         lins[i].style.width = item.innerHTML;
       })
+
+
+
+
 
 

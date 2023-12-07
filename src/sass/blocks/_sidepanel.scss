@@ -10,14 +10,15 @@
     top: 230px;
     left: 75px;
     a {
-       img{
+        img {
             height: 20px;
-            width: 20px;
-       } 
-       &:nth-child(3) {
-            transform: rotate(90deg);
-       }
+            width: 20px; 
+        } 
+        // &:nth-child(3) {
+        //         transform: rotate(90deg);
+        // }
     }
+
     &__divider {
         width: 2px;
         height: 70px;
